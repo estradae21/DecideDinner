@@ -1,14 +1,18 @@
 package com.ernestoestrada.decidedinner
 
 import android.content.Context
+import android.content.DialogInterface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AlertDialog
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.PopupWindow
 import android.widget.Toast
 import com.ernestoestrada.decidedinner.R.id.*
 import kotlinx.android.synthetic.main.activity_main.*
+import org.jetbrains.anko.alert
 import org.jetbrains.anko.selector
 import java.io.OutputStreamWriter
 import java.util.*
@@ -100,7 +104,15 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
-            R.id.action_settings -> true
+            //change settings to information
+            R.id.action_info -> {
+                alert( "Hope this application has been helpful\n" +
+                        "Application was develop using Kotlin with Anko. " +
+                        "Please leave a review with any comments or ideas\n" +
+                        "Thank you for the support!").show()
+                return true
+            }
+
             R.id.action_help-> {
 
                 Toast.makeText(applicationContext, "You dont need help",

@@ -22,16 +22,16 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        app:srcCompat="@drawable/dd_logo"
-        android:layout_marginTop="50dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="150dp"
+        android:layout_height="146dp"
         android:layout_marginEnd="8dp"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="8dp"
-        app:layout_constraintHorizontal_bias="0.5" />
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dd_logo" />
 
     <Button
         android:id="@+id/decideBtn"
